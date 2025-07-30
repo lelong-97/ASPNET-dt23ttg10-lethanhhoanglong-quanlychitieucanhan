@@ -1,9 +1,14 @@
 # ASPNET-dt23ttg10-lethanhhoanglong-websitequanlychitieucanhan
 💸 Đồ án ASP.NET – Website Quản Lý Chi Tiêu Cá Nhân
+
 👨‍🎓 Thông tin sinh viên
+
 Họ tên: Lê Thành Hoàng Long
+
 Lớp: DT23TTG10
+
 Mã học phần: 220064 – Chuyên đề ASP.NET
+
 Giảng viên: ThS. Đoàn Phước Miền
 
 🎯 Mục tiêu của dự án
