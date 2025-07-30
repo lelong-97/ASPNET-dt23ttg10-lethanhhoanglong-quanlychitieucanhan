@@ -1,5 +1,5 @@
-# ASPNET-dt23ttg10-lethanhhoanglong-websitequanlychitieucanhan
-💸 Đồ án ASP.NET – Website Quản Lý Chi Tiêu Cá Nhân
+# ASPNET-dt23ttg10-lethanhhoanglong-quanlychitieucanhan
+💸 Đồ án ASP.NET – Quản Lý Chi Tiêu Cá Nhân
 
 👨‍🎓 Thông tin sinh viên
 
