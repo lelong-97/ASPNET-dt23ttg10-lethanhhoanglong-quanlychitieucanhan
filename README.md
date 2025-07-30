@@ -73,6 +73,7 @@ progress-report/: Báo cáo tiến độ thực hiện theo tuần/tháng
 
 
 🚀 Hướng dẫn cài đặt & chạy chương trình
+
 ✅ Cách 1: Chạy từ Visual Studio
 Mở file ExpenseManagement.sln trong Visual Studio 2022
 
@@ -111,6 +112,7 @@ Bản đồ (Map): định vị vị trí chi tiêu bằng Google Map
 Cloud upload: lưu ảnh lên Cloudinary
 
 📬 Thông tin liên hệ
+
 Họ tên: Lê Thành Hoàng Long
 
 Email: lelong9730@gmail.com
