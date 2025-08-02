@@ -1,0 +1,72 @@
+﻿@model Expense_Tracker.Models.SignUpUserModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <title>Đăng ký Quản Lý Chi Tiêu</title>
+</head>
+<body>
+    <div class="container">
+        <h4 class="display-4">Đăng ký tài khoản</h4>
+        <hr />
+        <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Signup" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="FirstName" class="control-label">Họ</label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="LastName" class="control-label">Tên</label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label">Email</label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password" class="control-label">Mật khẩu</label>
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ConfirmPassword" class="control-label">Xác nhận mật khẩu</label>
+                        <input asp-for="ConfirmPassword" class="form-control" />
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ProfilePicture" class="control-label">Ảnh đại diện</label>
+                        <input type="file" asp-for="ProfilePicture" class="form-control-file" />
+                        <span asp-validation-for="ProfilePicture" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Đăng ký" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <img src="~/signup.png" class="img-fluid" alt="Ảnh minh họa đăng ký" />
+            </div>
+        </div>
+
+        <div>
+            <p>Đã có tài khoản? Nhấn <a asp-action="Login" asp-controller="Account">vào đây</a> để đăng nhập.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
