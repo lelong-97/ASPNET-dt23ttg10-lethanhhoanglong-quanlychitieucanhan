@@ -1,4 +1,4 @@
-# 💸 ASP.NET Web Project – Quản Lý Chi Tiêu Cá Nhân
+# 💸 ASP.NET Web Project – Xây dựng website quản lý chi tiêu cá nhân
 
 ## 👨‍🎓 Thông tin sinh viên
 
@@ -6,7 +6,7 @@
 - **Lớp:** DT23TTG10  
 - **Mã học phần:** 220064 – Chuyên đề ASP.NET  
 - **Giảng viên hướng dẫn:** ThS. Đoàn Phước Miền  
-
+- **Đề Tài:** Xây dựng website quản lý chi tiêu cá nhân
 ---
 
 ## 🎯 Mục tiêu của dự án
