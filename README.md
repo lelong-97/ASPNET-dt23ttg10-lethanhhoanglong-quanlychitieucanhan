@@ -1,125 +1,99 @@
-# ASPNET-dt23ttg10-lethanhhoanglong-quanlychitieucanhan
-💸 Đồ án ASP.NET – Quản Lý Chi Tiêu Cá Nhân
+# 💸 ASP.NET Web Project – Quản Lý Chi Tiêu Cá Nhân
 
-👨‍🎓 Thông tin sinh viên
+## 👨‍🎓 Thông tin sinh viên
 
-Họ tên: Lê Thành Hoàng Long
+- **Họ tên:** Lê Thành Hoàng Long  
+- **Lớp:** DT23TTG10  
+- **Mã học phần:** 220064 – Chuyên đề ASP.NET  
+- **Giảng viên hướng dẫn:** ThS. Đoàn Phước Miền  
 
-Lớp: DT23TTG10
+---
 
-Mã học phần: 220064 – Chuyên đề ASP.NET
+## 🎯 Mục tiêu của dự án
 
-Giảng viên: ThS. Đoàn Phước Miền
+Dự án xây dựng một website giúp người dùng:
 
-🎯 Mục tiêu của dự án
-Mục tiêu của đồ án là xây dựng một hệ thống phần mềm giúp người dùng:
+- Quản lý toàn bộ quá trình chi tiêu cá nhân một cách trực quan.
+- Theo dõi và phân tích tài chính qua biểu đồ và bảng thống kê.
+- Tối ưu hóa ngân sách thông qua các công cụ gợi ý thông minh.
+- Lưu trữ dữ liệu về thu nhập, chi tiêu và danh mục tài chính.
 
-Quản lý toàn bộ quá trình chi tiêu cá nhân một cách dễ dàng, trực quan.
+---
 
-Theo dõi và phân tích dữ liệu tài chính qua biểu đồ, bảng thống kê.
+## 🛠️ Công nghệ sử dụng
 
-Tối ưu hoá ngân sách bằng các công cụ gợi ý thông minh, giúp đưa ra quyết định tài chính hiệu quả hơn.
+- **Ngôn ngữ lập trình:** C#  
+- **Framework:** ASP.NET Core 6.0 (Web Application)  
+- **IDE:** Visual Studio 2022  
+- **Cơ sở dữ liệu:** SQL Server
 
-Lưu trữ các dữ liệu liên quan đến thu nhập, chi tiêu, tiết kiệm, và các danh mục tài chính.
+### Thư viện / SDK sử dụng:
 
-Tăng cường trải nghiệm người dùng bằng các tính năng phụ trợ như chatbot, bản đồ tích hợp, xuất báo cáo Excel...
-
-🛠️ Công nghệ sử dụng
-Ngôn ngữ lập trình: C# (.NET Framework 6.0)
-
-Mô hình ứng dụng: Windows Forms Application
-
-IDE: Visual Studio 2022
-
-Cơ sở dữ liệu: Sử dụng SQL Server
-
-Thư viện / SDK bên thứ ba:
-
-AForge.NET: xử lý ảnh
-
-CloudinaryDotNet: upload ảnh/video lên cloud
-
-FontAwesome.Sharp: biểu tượng giao diện
-
-GMap.NET: tích hợp bản đồ Google Map
-
-Newtonsoft.Json: xử lý dữ liệu JSON (API)
-
-Microsoft.Office.Interop.Excel: xuất báo cáo ra file Excel
-
-API sử dụng:
-
-Google Map API
-
-Gemini AI (chatbot hỗ trợ người dùng)
-
-Cloudinary API (lưu trữ tài nguyên trực tuyến)
-
-📁 Cấu trúc thư mục dự án
-scr/: Mã nguồn chương trình
-
-Controllers/: các controller xử lý logic
-
-Models/: định nghĩa dữ liệu, entity
-
-UserControl/: các control dùng lại cho giao diện
-
-Core/: các lớp chức năng xử lý API, Excel, Cloudinary...
-
-bin/Debug/: thư viện .dll, file thực thi .exe
-
-setup/: Hướng dẫn cài đặt và dữ liệu mẫu (tự tạo thêm)
-
-InstallationGuide.pdf: mô tả cài đặt
-
-ExpenseManagement.exe: chương trình đã biên dịch
-
-progress-report/: Báo cáo tiến độ thực hiện theo tuần/tháng
+| Tên thư viện                | Chức năng                                         |
+|----------------------------|----------------------------------------------------|
+| Bootstrap 4.6              | Giao diện responsive, dễ sử dụng                   |
+| FontAwesome                | Biểu tượng giao diện hiện đại                      |
+| Chart.js                   | Hiển thị biểu đồ thống kê                          |
+| Newtonsoft.Json            | Xử lý JSON từ API                                  |
+| CloudinaryDotNet           | Upload hình ảnh lên Cloudinary                     |
 
 
-🚀 Hướng dẫn cài đặt & chạy chương trình
+### API tích hợp:
 
-✅ Cách 1: Chạy từ Visual Studio
-Mở file ExpenseManagement.sln trong Visual Studio 2022
+- **Cloudinary API** – lưu trữ hình ảnh trực tuyến
 
-Chọn cấu hình Debug, nền tảng Any CPU
+---
 
-Nhấn Start (hoặc F5) để chạy
+## 📁 Cấu trúc thư mục
 
-Nếu xuất hiện lỗi thiếu thư viện, đảm bảo rằng thư mục bin/Debug đầy đủ file .dll đi kèm
+QUANLYCHITIEU_ASPNET/
+│
+├── Controllers/ # Điều hướng và xử lý logic
+├── Models/ # Các lớp mô hình dữ liệu (Entity)
+├── Views/ # Giao diện người dùng (Razor Pages)
+├── wwwroot/ # Tài nguyên tĩnh (CSS, JS, hình ảnh)
+├── Services/ # Xử lý API, Excel, Cloudinary...
+├── Migrations/ # Thư mục quản lý dữ liệu Entity Framework
+├── appsettings.json # Chuỗi kết nối CSDL, cấu hình API
+├── Program.cs, Startup.cs # Cấu hình ứng dụng ASP.NET Core
+├── setup/ # Tài liệu hướng dẫn cài đặt, dữ liệu mẫu
+│ └── InstallationGuide.pdf
+└── README.md # File hướng dẫn tổng quan
 
-✅ Cách 2: Chạy file thực thi
-Truy cập vào thư mục bin/Debug/
 
-Mở file ExpenseManagement.exe
 
-Đảm bảo máy đã cài .NET Framework 6.0
+---
 
-📊 Chức năng chính
-Dashboard: giao diện tổng quan về tài chính người dùng
+## 🚀 Hướng dẫn cài đặt & chạy dự án
 
-Quản lý giao dịch: thêm, sửa, xóa các khoản thu/chi
+### ✅ Chạy bằng Visual Studio
 
-Quản lý danh mục: tạo nhóm thu/chi, phân loại
+1. Mở file `*.sln` trong Visual Studio 2022.
+2. Kiểm tra chuỗi kết nối SQL Server trong `appsettings.json`.
+3. Khởi tạo CSDL (nếu cần):  
+dotnet ef database update
 
-Ngân sách: theo dõi ngân sách đã đặt, so sánh với thực chi
+less
+Sao chép
+Chỉnh sửa
+4. Nhấn **Start** hoặc **F5** để chạy ứng dụng trên trình duyệt.
 
-Tiết kiệm: nhập mục tiêu tiết kiệm, tiến độ
+> **Lưu ý:** Đảm bảo máy đã cài đặt .NET 6.0 SDK.
 
-Thống kê: biểu đồ trực quan theo tuần/tháng/năm
+---
 
-Báo cáo: xuất Excel, lọc dữ liệu nâng cao
+## 📊 Tính năng chính của hệ thống
 
-Chatbot (AI): hỗ trợ người dùng tìm kiếm, gợi ý
+- **Dashboard:** Tổng quan tình hình tài chính cá nhân.
+- **Quản lý giao dịch:** Thêm, sửa, xóa khoản thu/chi.
+- **Quản lý danh mục:** Tạo nhóm chi tiêu, phân loại thu nhập.
+- **Ngân sách:** Đặt và theo dõi ngân sách theo tháng.
+- **Thống kê:** Biểu đồ phân tích theo tháng/năm.
 
-Bản đồ (Map): định vị vị trí chi tiêu bằng Google Map
+---
 
-Cloud upload: lưu ảnh lên Cloudinary
+## 📬 Thông tin liên hệ
 
-📬 Thông tin liên hệ
-
-Họ tên: Lê Thành Hoàng Long
-
-Email: lelong9730@gmail.com
-
-Số điện thoại: 0584765228
+- **Họ tên:** Lê Thành Hoàng Long  
+- **Email:** lelong9730@gmail.com  
+- **Số điện thoại:** 0584765228
