@@ -92,6 +92,11 @@ Chỉnh sửa
 
 ---
 
+## 📊 Tài khoản đăng nhập dùng trong báo cáo
+- **Tên đăng nhập:** lelong9730@gmail.com
+- **Mật khẩu:** lelong9730
+---
+
 ## 📬 Thông tin liên hệ
 
 - **Họ tên:** Lê Thành Hoàng Long  
